@@ -7,7 +7,7 @@ COPY . /tmp/src
 RUN mv /tmp/src/.s2i/bin /tmp/scripts
 
 RUN rm -rf /tmp/src/.git* && \
-    chown -R 1001 /tmp/src && \
+    chown -R 900 /tmp/src && \
     chgrp -R 0 /tmp/src && \
     chmod -R g+w /tmp/src
 
