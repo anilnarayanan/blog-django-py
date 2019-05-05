@@ -13,7 +13,7 @@ RUN rm -rf /tmp/src/.git* && \
 
 USER root
 
-EXPOSE 900
+EXPOSE 8080
 
 ENV S2I_SCRIPTS_PATH=/usr/libexec/s2i \
     S2I_BASH_ENV=/opt/app-root/etc/scl_enable \
